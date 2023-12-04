@@ -1,0 +1,17 @@
+### List Messages
+
+GET http://localhost:3000/messages
+
+
+### Create Message
+
+POST http://localhost:3000/messages
+content-type: application/json
+
+{
+  "content": "Sample message 2"
+}
+
+
+### Read Message
+GET http://localhost:3000/messages/ead50dc601
