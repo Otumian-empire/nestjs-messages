@@ -1,6 +1,5 @@
-// messages.service.ts;
-
 import { Injectable } from "@nestjs/common";
+
 import { MessagesRepository } from "./messages.repository";
 
 @Injectable()
@@ -17,5 +16,13 @@ export class MessagesService {
 
   create(content: string) {
     return this.messageRepo.create(content);
+  }
+
+  update(id: string, content: string) {
+    return this.messageRepo.update(id, content);
+  }
+
+  delete(id: string) {
+    return this.messageRepo.delete(id);
   }
 }

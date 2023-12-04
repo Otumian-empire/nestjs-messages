@@ -9,9 +9,22 @@ POST http://localhost:3000/messages
 content-type: application/json
 
 {
-  "content": "Sample message 2"
+  "content": "This is very simple message"
 }
 
 
 ### Read Message
-GET http://localhost:3000/messages/ead50dc601
+GET http://localhost:3000/messages/3a16abe8c1
+
+
+### Update Message
+
+PUT http://localhost:3000/messages/3a16abe8c1
+content-type: application/json
+
+{
+  "content": "This is an updated message 2"
+}
+
+### Delete Message
+DELETE http://localhost:3000/messages/ead50dc601
